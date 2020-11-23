@@ -5,8 +5,8 @@
 
 const SizeControlRef = document.querySelector('#font-size-control');
 const text = document.querySelector('#text');
-console.dir(SizeControlRef);
-console.dir(text);
+// console.dir(SizeControlRef);
+// console.dir(text);
 
 SizeControlRef.addEventListener('input', (e) => {
   changeTextSize(e)

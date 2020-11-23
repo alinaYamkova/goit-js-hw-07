@@ -18,10 +18,11 @@ inputRef.addEventListener('blur', (evt) => {
 });
 
 function checkTheNumber (evt) {
-  if (inputRef.textContent.length === 6) {
+  if (inputRef.textContent.length === Number(data_length)) {
     inputRef.classList.remove('invalid')
     inputRef.classList.add('valid'); 
   } else {
     inputRef.classList.add('invalid')
+    inputRef.classList.remove('valid')
   };
 }; 

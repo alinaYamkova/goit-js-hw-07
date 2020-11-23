@@ -16,16 +16,16 @@ const images = [
   },
 ];
 
-// const gallery = document.querySelector('#gallery');
-console.log(createGallery(images));
+const gallery = document.querySelector('#gallery');
 
-function createGallery (images) {
-  return images.map(({url, alt}) =>  {
-    return `
+const createNewGallery = (({url, alt}) => {
+  return `
     <li>
-      <img url ='${url}' alt ='${alt}' 
+      <img url = "${url} "alt = "${alt}" width = "450"/>
     </li>`; 
   });
-}
-// console.log(newImg);
-console.log(createGallery (images));
+
+const createText = images.map(createNewGallery).join('');
+
+gallery.insertAdjacentHTML("beforeEnd", createText);
+console.log(gallery);

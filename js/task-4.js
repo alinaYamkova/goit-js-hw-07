@@ -4,13 +4,13 @@ let counterValue = 0;
 
 function firstClick(){
   counterValue +=1;
-  document.getElementById('value').textContent = counterValue;
+  targetBtnRef.textContent = counterValue;
   console.log('+ click');
 }
 
 function secondClick(){
   counterValue -=1;
-  document.getElementById('value').textContent = counterValue;
+  targetBtnRef.textContent = counterValue;
   console.log('- click');
 }
 

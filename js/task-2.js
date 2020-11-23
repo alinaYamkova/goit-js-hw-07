@@ -15,9 +15,8 @@ const createCard = ingredients => {
 }
 
 const liList = ingredients.map(ingredient => createCard(ingredient));
-// console.log(liList);
-
 const ul = document.getElementById('ingredients');
+// console.log(liList);
 // console.log(ul);
 
 ul.append(...liList);
