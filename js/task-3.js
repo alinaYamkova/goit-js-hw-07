@@ -21,7 +21,7 @@ const gallery = document.querySelector('#gallery');
 const createNewGallery = (({url, alt}) => {
   return `
     <li>
-      <img url = "${url} "alt = "${alt}" width = "450"/>
+      <img src = "${url}" alt = "${alt}" width = "350" />
     </li>`; 
   });
 
